@@ -1,3 +1,5 @@
+First clone it using git
+
 To run the project on Visual Studio 2019:
   1. Need to first cd to the Plugins directory
   2. Then load the project from file,  SpecFow.Actions.sln or just click on the file and start Visual Studio this way.
