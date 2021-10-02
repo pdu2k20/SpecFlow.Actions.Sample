@@ -3,14 +3,8 @@ name: .NET
 on:
   push:
     branches: [ master ]
-    paths:
-      - 'Plugins/SpecFlow.Actions.Selenium/**'
-      - 'Plugins/*'
   pull_request:
     branches: [ master ]
-    paths:
-      - 'Plugins/SpecFlow.Actions.Selenium/**'
-      - 'Plugins/*'
 
 jobs:
   build:
