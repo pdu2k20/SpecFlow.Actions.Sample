@@ -19,6 +19,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Build
-      run: dotnet build Plugins/SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln
-    - name: Test
-      run: dotnet build Plugins/SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln
+      run: dotnet build --project SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln
+    - name: Testln
+      run: dotnet test
