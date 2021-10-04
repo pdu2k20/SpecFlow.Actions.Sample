@@ -23,5 +23,3 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln --no-build --verbosity normal
