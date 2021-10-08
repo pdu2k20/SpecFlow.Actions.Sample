@@ -19,5 +19,10 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '5.0.x'
+    - name:  Install Google Chrome 
+      run:   |
+              chmod +x ./scripts/InstallChrome.sh
+                          ./scripts/InstallChrome.sh
+    - run: dotnet test SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln
     - name: Build
       run: dotnet build SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln
