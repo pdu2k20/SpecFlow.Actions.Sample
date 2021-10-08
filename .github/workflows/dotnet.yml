@@ -28,4 +28,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test Plugins/SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln --no-build --verbosity normal
+      run: dotnet test SpecFlow.Actions.Selenium/SpecFlow.Actions.Selenium.sln --no-build --verbosity normal
