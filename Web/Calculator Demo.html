@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://specflowoss.github.io/Calculator-Demo/Calculator.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator Demo</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="./bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="./bootstrap-icons.css">
+
+  <script type="text/javascript">
+    function addNumbers() {
+      var number1 = parseInt(document.getElementById("first-number").value);
+      var number2 = parseInt(document.getElementById("second-number").value);
+
+      var result = 0 + number1 + number2;
+
+      document.getElementById("result").value = result;
+    }
+
+    function reset() {
+      document.getElementById("first-number").value = "";
+      document.getElementById("second-number").value = "";
+      document.getElementById("result").value = "";
+    }
+
+    function addNumbersSlow() {
+      setTimeout(function () {
+        addNumbers();
+      }, 500);
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <div class="container" role="main">
+    <div class="jumbotron">
+      <h1>Calculator Demo</h1>
+      <p>
+        A simple application implementing some basic calculations.
+      </p>
+    </div>
+    <div>
+      <div class="form-group row">
+        <label for="first-number" class="col-sm-6 col-form-label">First number</label>
+        <div class="col-sm-6">
+          <input class="form-control form-control-lg" id="first-number" name="first-number" placeholder="First number">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="second-number" class="col-sm-6 col-form-label">Second number</label>
+        <div class="col-sm-6">
+          <input class="form-control form-control-lg" id="second-number" name="second-number" placeholder="Second number">
+        </div>
+      </div>
+      <div>
+        <button id="add-button" type="submit" class="btn btn-primary" onclick="addNumbersSlow(); return false;"><i class="bi-plus-circle"></i> Add</button>
+        <button id="reset-button" type="submit" class="btn" onclick="reset(); return false;"><i class="bi-x-circle" style="color:red"></i> Reset</button>
+      </div>
+      <hr>
+      <div class="form-group row">
+        <label for="result" class="col-sm-6 col-form-label">Calculated result</label>
+        <div class="col-sm-6">
+          <input class="form-control form-control-lg" id="result" name="result" readonly="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>

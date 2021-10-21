@@ -6,6 +6,7 @@ namespace Example.PageObjects
     {
         //The URL of the calculator to be opened in the browser
         private protected const string CalculatorUrl = "https://specflowoss.github.io/Calculator-Demo/Calculator.html";
+        //private protected const string CalculatorUrl = @"C:/Users/tbolt/src3/SpecFlow.Actions.Sample/Web/Calculator%20Demo.html";
 
         //Finding elements by ID
         private protected By FirstNumberFieldLocator => By.Id("first-number");
